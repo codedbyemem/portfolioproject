@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="projects.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="nav-bar">
+      <div class="coded-logo">
+        <a href="index.html">{codedbyemem}</a>
+      </div>
+      <div class="time">
+        <div class="local-time">Your Local Time :&nbsp;</div>
+        <div id="current-time"></div>
+      </div>
+      <div class="nav-links">
+        <div class="projects-nav">Projects</div>
+      </div>
+    </div>
+
+    <div class="page-title">Projects</div>
+    <div class="projects-info">
+      I began my frontend web development journey in <span>October 2022</span>.
+      Since then, I have completed these projects as part of courses and just
+      for fun. You should check them out!
+    </div>
+    <div class="screenshots">
+      <div class="row1">
+        <a
+          class="she-codes"
+          href="https://www.shecodes.io/graduates/57785-emem-umoabasi"
+          target="_blank"
+        >
+          <img
+            src="https://raw.githubusercontent.com/codedbyemem/portfolioproject/main/Screenshot%202023-01-22%20at%2016.14.29.png"
+            alt="Shecodes Final Project"
+          />
+          <div class="project-name">SheCodes Final Project</div>
+        </a>
+
+        <a
+          class="clock-project"
+          href="https://codedbyemem.github.io/codedbyememclock.github.io/"
+          target="_blank"
+        >
+          <img
+            src="https://github.com/codedbyemem/portfolioproject/blob/main/Screenshot%202023-01-22%20at%2015.41.04.png?raw=true"
+            alt="Digital Clock Project"
+          />
+          <div class="project-name">Digital Clock Project</div>
+        </a>
+        <a
+          class="theme-project"
+          href="https://codedbyemem.github.io/themeselector.github.io/"
+          target="_blank"
+        >
+          <img
+            src="https://raw.githubusercontent.com/codedbyemem/portfolioproject/main/Screenshot%202023-01-22%20at%2015.42.28.png"
+            alt="Theme Selector Project"
+          />
+          <div class="project-name">Theme Selector Project</div>
+        </a>
+      </div>
+      <div class="row2">
+        <a
+          class="about-me"
+          href="https://codedbyemem.github.io/about-me.github.io/"
+          target="_blank"
+        >
+          <img
+            class="img"
+            src="https://raw.githubusercontent.com/codedbyemem/portfolioproject/main/Screenshot%202023-01-22%20at%2015.43.20.png"
+            alt="About Me Page Project"
+          />
+          <div class="project-name">About Me Page Project</div>
+        </a>
+        <a
+          class="art-gallery"
+          href="https://codedbyemem.github.io/digitalartgallery/"
+          target="_blank"
+        >
+          <img
+            src="https://raw.githubusercontent.com/codedbyemem/portfolioproject/main/Screenshot%202023-01-22%20at%2015.46.09.png"
+            alt="Art Gallery Project"
+          />
+          <div class="project-name">Art Gallery Project</div>
+        </a>
+      </div>
+    </div>
+
+    <script>
+      function updateTime() {
+        let time = document.getElementById("current-time");
+        setInterval;
+        let t = new Date();
+        time.innerHTML = t.toLocaleTimeString();
+      }
+
+      setInterval(updateTime, 1000);
+    </script>
+  </body>
+</html>

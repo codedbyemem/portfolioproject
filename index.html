@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="nav-bar">
+      <div class="coded-logo">{codedbyemem}</div>
+      <div class="time">
+        <div class="local-time">Your Local Time :&nbsp;</div>
+        <div id="current-time"></div>
+      </div>
+      <div class="nav-links">
+        <div class="projects-nav">
+          <a class="projects-link" href="projects.html"> Projects</a>
+        </div>
+      </div>
+    </div>
+    <div class="whole-page">
+      <div class="home-greeting">
+        <span class="highlight-greeting">Hi! This is </span>
+        <span class="coded-by-emem">{codedbyemem}</span><br />
+        <div class="intro">
+          My name is <span class="name">Emem Umoabasi</span>. I am a web
+          developer and digital artist from London.
+        </div>
+
+        <span class="blurb">
+          Here you can navigate my site to see my previous projects and contact
+          me on social media.</span
+        >
+      </div>
+
+      <div class="main-photo">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/users/avatars/000/057/785/medium/00100sPORTRAIT_00100_BURST20221119142412746_COVER.jpg?1670613503"
+          alt="me"
+        />
+      </div>
+    </div>
+    <script>
+      function updateTime() {
+        let time = document.getElementById("current-time");
+        setInterval;
+        let t = new Date();
+        time.innerHTML = t.toLocaleTimeString();
+      }
+
+      setInterval(updateTime, 1000);
+    </script> 
+ </div>
+  <div class="icons">
+      <a
+        class="youtube-icon social-icon"
+        href="https://www.youtube.com/channel/UC17uwWgEyxVH1rvh_UJliHw"
+        target="_blank"
+      >
+        <ion-icon name="logo-youtube"></ion-icon>
+      </a>
+      <a
+            class="github-icon social-icon"
+            href="https://github.com/codedbyemem"
+            target="_blank"
+          >
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+      <a
+        class="linkedin-icon social-icon"
+        href="https://www.linkedin.com/in/emem-umoabasi-039820186/"
+        target="_blank"
+      >
+        <ion-icon name="logo-linkedin"></ion-icon>
+      </a>
+    </div>
+    <script src="index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
+  </body>
+</html>
