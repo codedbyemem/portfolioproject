@@ -164,9 +164,13 @@ body {
   .row2 {
     display: flex;
     flex-direction: column;
+    gap: 20px;
   }
 
   .screenshots img {
     width: 320px;
+  }
+  .screenshots {
+    padding-bottom: 50px;
   }
 }
