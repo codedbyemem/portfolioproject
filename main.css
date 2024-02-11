@@ -47,16 +47,13 @@ body {
   font-weight: 400;
 }
 
-.contact-nav:hover,
 .projects-nav:hover {
   transition: all 0.4s ease-in-;
   cursor: pointer;
 }
 
-.contact-nav:hover,
 .projects-nav:hover {
-  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #18d4e5, 0 0 40px #18d4e5,
-    0 0 50px #18d4e5, 0 0 60px #18d4e5, 0 0 70px #ffffff;
+  color: #fff;
 }
 
 #current-time {
@@ -69,11 +66,10 @@ a.projects-link {
   color: #fff;
 }
 
-a.projects-link:visited {
-  text-decoration: none;
-  color: #fff;
+a.projects-link:hover {
+  transition: all ease-in-out 0.5s;
+  color: #5ce1e6;
 }
-
 /* //homepagetext */
 
 .home-greeting {
@@ -196,8 +192,7 @@ a.projects-link:visited {
     margin-left: 0;
     margin-right: 0;
     margin-top: 40px;
-        margin-bottom: 30px;
-
+    margin-bottom: 30px;
   }
   img {
     width: 200px;
